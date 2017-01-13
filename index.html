@@ -1,17 +1,38 @@
-<!DOCTYPE html>
-<!-- All HTML documents begin and end with an "html" tag -->
+<!doctype html>
 <html lang="en">
+    <head>
+    	<!--This is your Bootstrap CSS with the grid system already included.-->
+		<link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
+    	
+		<!--This is an additional CSS where you can create custom classes to be used.-->
+		<link type="text/css" rel="stylesheet" href="LACMA 26.css"/>
+		
+		<meta charset="utf-8">
+    	<title>LACMA #26 by [YOUR NAME HERE]</title>
+    </head>
 
-  <!-- The "header" is the part of your document where you provide the browser with important information like stylesheets you have used -->
-	<head>
-		<title>Matt Santizo</title>  <!-- This text shows up on the tab in your browser -->
-	</head>
-
-  <!-- The "body" is the part of your document where you include all content you want to show up in the browser -->
 	<body>
-		<p>hello Earth</p>
+		<!--A container means that your content will not extend to the edge of the screen. Try removing this at the end and see what happens.-->
+		<div class="container">
+	        
+			<!--All your content must be placed into a row. These rows can have a set height or can vary depending on how much you place into it.-->
+			
+			<div class="row">
+				<!--If there is no content in your row, you must set the row height. A class '.viewfill' has been created to fill 100% of the screen.-->
+				<div class="screenfill">	
+					
+					<!--This is how you set the width of the columns within the current row. Make sure the number of columns in each row adds up to 12!-->
+					<div class="col-sm-4">
+						<div class="lightblue screenfill">
+						</div>
+					</div>
+					
+					<div class="col-sm-8">
+						<div class="white">
+						</div>
+					</div>
+				
+				</div>
+			</div>
+		</div>
 	</body>
-   
-</html>
-
-<!-- W3Schools is a helpful resource to refresh your brain:  http://www.w3schools.com/html/html_intro.asp -->
