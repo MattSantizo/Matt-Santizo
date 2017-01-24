@@ -24,8 +24,12 @@ html, body {
 	background-color: #FFF7FA;
 }
 
-.lightblue {
-	background-color: #FF471A;
+.lblue {
+	background-color: blue;
+}
+
+.wh{
+	background-color: gold;
 }
 
 .nopadding-left {
