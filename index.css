@@ -1,22 +1,33 @@
-* {
-  box-sizing: border-box;
+#header {
+    background-color: #736AFF;
+    color: white;
+    text-align: center;
+    padding: 8px;
 }
-body {
-  margin: 0;
+#section {
+    width: 1250px;
+    padding: 0px;
 }
-div {
-  float: left;
-  width: calc(100vw / 11);
-  height: calc(100vh / 11);
-  margin: calc(100vh / 11) 0 0 calc(100vw / 11);
+h1{
+	color: #E6E6FA;
+	font-family: Courier New;
+	font-size: 50px;
+	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
 }
-@element 'div' {
-  $this {
-    box-shadow:
-      rgba(0,0,0,.3)
-      eval('(offsetLeft + offsetWidth/2 - cursorX) / 50')px
-      eval('(offsetTop + offsetHeight/2 - cursorY) / 50')px
-      1vh
-    ;
-  }
+h3{
+	color: #E6E6FA;
+	font-family: Courier New;
+	font-size: 30px;
+	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
 }
+h4{
+	color: #E6E6FA;
+	font-family: Courier New;
+	font-size: 22px;
+	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
+}
+h5{
+	font-family: Courier New;
+	color: red;
+	font: bold;
+	}
