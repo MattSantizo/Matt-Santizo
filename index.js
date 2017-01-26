@@ -1,16 +1,13 @@
 
-$(".left-side").on("click", function(){
-    $(".sidebar").addClass("move-right");
-});
+var cursorX = 0
+var cursorY = 0
 
-$(".close").on("click", function(){
-  $(".sidebar").removeClass("move-right");
-});
+function update(e){
+  cursorX = e.clientX || e.touches[0].clientX
+  cursorY = e.clientY || e.touches[0].clientY
+  EQCSS.apply()
+}
 
-$("#contact").on("click", function(){
-  $(".contact-me").addClass("move-down");
-})
-
-$(".contact-close").on("click", function(){
-  $(".contact-me").removeClass("move-down");
-});
+// Update cursor position every mouse/touch move
+document.addEventListener('mousemove',update)
+document.addEventListener('touchmove',update)
