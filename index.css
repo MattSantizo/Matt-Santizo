@@ -1,164 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
-
-@import url('https://fonts.googleapis.com/css?family=Lobster+Two');
-
-$pink: #E65F5C;
-
-nav {
-  position: fixed;
-  width: 100%;
-  background: $pink; 
+* {
+  box-sizing: border-box;
 }
-
-.left-side {
+body {
+  margin: 0;
+}
+div {
   float: left;
-  padding: 20px;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
-  color: #FFF;
-  letter-spacing: 2px;
-  cursor: pointer;
+  width: calc(100vw / 11);
+  height: calc(100vh / 11);
+  margin: calc(100vh / 11) 0 0 calc(100vw / 11);
 }
-
-.right-side {
-  float: right;
-  padding-right: 10px;
+@element 'div' {
+  $this {
+    box-shadow:
+      rgba(0,0,0,.3)
+      eval('(offsetLeft + offsetWidth/2 - cursorX) / 50')px
+      eval('(offsetTop + offsetHeight/2 - cursorY) / 50')px
+      1vh
+    ;
+  }
 }
-
-.right-side li {
-  display: inline-block;
-  padding: 20px;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
-  color: #FFF;
-  letter-spacing: 2px;
-  cursor: pointer;
-}
-
-.sidebar {
-  z-index: 1;
-  background: #E65F5C;
-  position: absolute;
-  top: 60px;
-  left: -300px;
-  width: 200px;
-  height: 100%;
-  transition: all 0.5s ease;
-}
-
-.move-right {
-   left: 0;
-}
-
-.close, .contact-close {
-  float: right;
-  padding-right: 20px;
-  padding-top: 8px;
-  color: #FFF;
-  opacity: 1;
-  font-size: 15px;
-  font-weight: 100;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #FFF;
-  opacity: 1;
-}
-
-.sidebar ul {
-   padding-top: 20px; 
-}
-
-.sidebar ul li {
-  padding: 10px;
-  text-transform: uppercase;
-  font-family: 'Fjalla One', sans-serif;
-  color: #FFF;
-  letter-spacing: 2px;
-  list-style: none;
-}
-
-.right-side li a {
-  color: #FFF;
-}
-
-.right-side li a:hover {
-  text-decoration: none;
-}
-
-.contact-me {
-  z-index: 3;
-  position: absolute;
-  margin: auto;
-  top: -1000px; bottom:0;
-  right:0; left:0;
-  width: 500px; height: 300px;
-  background: $pink;
-  transition: all 0.5s ease;
-}
-
-.contact-form {
-  position: absolute;
-  margin: auto; 
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  width: 500px; height: 400px;
-  background: $pink;
-}
-
-form {
-  padding: 35px;
-  padding-left: 50px;
-  font-family: 'Fjalla One', sans-serif;
-  text-transform: uppercase;
-  color: #FFF;
-  letter-spacing: 2px;
-}
-
-.row {
-  padding: 5px;
-}
-
-form input {
-  width: 300px;
-  height: 30px;
-  border:none;
-}
-
-form textarea {
-  width: 300px;
-  height: 70px;
-  border: none;
-}
-
-form button {
-  background: #FFF;
-  width: 100px;
-  height: 40px;
-  border: none;
-  color: $pink;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  outline: none;
-}
-
-.move-down {
-  top: 100px;
-}
-
-.content-box {
-  position: absolute;
-  margin: auto;
-  top: 0; bottom: 0;
-  left: 0; right:0; 
-  width: 500px; height: 100px;
-}
-
-.content {
-  z-index: -1;
-  width: 600px;
-  font-family: 'Lobster Two', cursive;
-  font-size: 30px;
-}
-
