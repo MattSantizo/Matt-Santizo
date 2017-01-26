@@ -1,3 +1,4 @@
+
 $(".left-side").on("click", function(){
     $(".sidebar").addClass("move-right");
 });
