@@ -1,13 +1,34 @@
 
-var cursorX = 0
-var cursorY = 0
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
 
-function update(e){
-  cursorX = e.clientX || e.touches[0].clientX
-  cursorY = e.clientY || e.touches[0].clientY
-  EQCSS.apply()
-}
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
 
-// Update cursor position every mouse/touch move
-document.addEventListener('mousemove',update)
-document.addEventListener('touchmove',update)
+var navBarPos = $(".navbar").offset().top;
+  
+  $(window).scroll(function(){
+
+    var scrollP = $(this).scrollTop();
+    if (scrollP >= navBarPos) {
+      $(".navbar").addClass("sticky");
+      $(".navbar").css('opacity', '0.95');
+
+    } else {
+      $(".navbar").removeClass("sticky");
+      $(".navbar").css('opacity', '1');
+
+    }
+  });
+
+// Hamburger Menu from http://codepen.io/g13nn/pen/eHGEF
