@@ -1,33 +1,116 @@
-#header {
-    background-color: #736AFF;
-    color: white;
-    text-align: center;
-    padding: 8px;
+body{
+	font-family: 'Noto Sans', sans-serif;
+	margin:0px;
+	background-color: #CC99FF;
+	height: 200vh;
 }
-#section {
-    width: 1250px;
-    padding: 0px;
+header{
+	width:100%; 
+	background:#131313; 
 }
-h1{
-	color: #E6E6FA;
-	font-family: Courier New;
-	font-size: 50px;
-	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
+nav{
+	width:100%; 
+	background:#1d1f20; 
+	height:50px; 
+	position: fixed;
+	box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.5);
 }
-h3{
-	color: #E6E6FA;
-	font-family: Courier New;
-	font-size: 30px;
-	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
-h4{
-	color: #E6E6FA;
-	font-family: Courier New;
-	font-size: 22px;
-	text-shadow: 0 0 3px #1F45FC, 0 0 5px #1F45FC;
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:0px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
 }
-h5{
-	font-family: Courier New;
-	color: red;
-	font: bold;
-	}
+/* If you're not sure how to modify these different CSS properties, check out http://www.w3schools.com/cssref/ and just use CTRL+F to search for the term */
+.menu{z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#131313;  position:absolute; text-align:center;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu li:hover{display: block;    background:#181818; padding:15px 0 15px 0; border-bottom:#1d1f20 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#fff;}
+.menu ul li a:hover {  color: #fff; text-decoration:none;}
+.menu a{text-decoration:none; color:white;}
+.menu a:hover{text-decoration:none; color:white;
+}
+.headerbar {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  background-image: url(../images/DVCWolfLogo.jpg);
+  height: 330px;
+}
+.navbar {
+  width: 100%;
+  position: absolute;
+  line-height: 50px;
+  left: 0;
+  text-align: center;
+  background-color: #0c0c0c;
+  color: #fff;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.5em;
+  font-weight: bold;
+  z-index: 9000;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0d0d0d;
+  z-index: 9000;
+}
+.container {
+  padding-top: 70px;
+}
+.top {
+  padding-top: 30px;
+}
+a img:hover{
+  opacity: 0.3;
+  background-color: black;
+}
+.bold {
+  font-weight: bold;
+}
+p {
+  font-size: 1.15em;
+}
+.grey {
+	background: #ccc;
+}
+.tall-grey {
+	height: 200px;
+	background: #ccc;
+}
+.top-padding {
+	padding-top: 75px;
+}
+.mainimg {
+	display: block;
+    	margin: auto;
+    	width: 50%;
+}
